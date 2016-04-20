@@ -1,0 +1,14 @@
+/**
+ * 
+ */
+package com.administradorclaves.controlador;
+
+import java.io.Serializable;
+
+/**
+ * @author lucka
+ *
+ */
+public class Login implements Serializable {
+
+}

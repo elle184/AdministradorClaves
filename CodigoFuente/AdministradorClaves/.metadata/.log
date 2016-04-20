@@ -1,0 +1,88 @@
+!SESSION 2016-04-19 22:30:15.107 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.7.0_95
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=es_CO
+Framework arguments:  -product org.eclipse.epp.package.php.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.php.product
+
+!ENTRY org.eclipse.jface 2 0 2016-04-19 22:31:14.035
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-04-19 22:31:14.035
+!MESSAGE A conflict occurred for ALT+SHIFT+D R:
+Binding(ALT+SHIFT+D R,
+	ParameterizedCommand(Command(org.eclipse.wst.server.launchShortcut.debug,Debug on Server,
+		Debug the current selection on a server,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@26a661d5,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+D R,
+	ParameterizedCommand(Command(org.eclipse.rap.tools.launch.RAPLaunchShortcut.debug,Debug RAP Application,
+		Debug RAP Application,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7560fac5,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-04-19 22:31:14.035
+!MESSAGE A conflict occurred for ALT+SHIFT+X R:
+Binding(ALT+SHIFT+X R,
+	ParameterizedCommand(Command(org.eclipse.wst.server.launchShortcut.run,Run on Server,
+		Run the current selection on a server,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@72c9583d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+X R,
+	ParameterizedCommand(Command(org.eclipse.rap.tools.launch.RAPLaunchShortcut.run,Run RAP Application,
+		Run RAP Application,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@c047ab,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.jface 2 0 2016-04-19 23:01:26.174
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-04-19 23:01:26.174
+!MESSAGE A conflict occurred for CTRL+D:
+Binding(CTRL+D,
+	ParameterizedCommand(Command(org.eclipse.debug.ui.commands.eof,EOF,
+		Send end of file,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6efbd520,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.debug.ui.console,,,system)
+Binding(CTRL+D,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.text.delete.line,Delete Line,
+		Delete a line of text,
+		Category(org.eclipse.ui.category.textEditor,Text Editing,Text Editing Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@576560cc,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.eclipse.jdt.core 4 1006 2016-04-19 23:02:09.464
+!MESSAGE /home/lucka/.m2/repository/mysql/mysql-connector-java/6.0.2/mysql-connector-java-6.0.2.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2016-04-19 23:02:09.476
+!MESSAGE /home/lucka/.m2/repository/mysql/mysql-connector-java/6.0.2/mysql-connector-java-6.0.2.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2016-04-19 23:02:09.477
+!MESSAGE /home/lucka/.m2/repository/mysql/mysql-connector-java/6.0.2/mysql-connector-java-6.0.2.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2016-04-19 23:02:09.477
+!MESSAGE /home/lucka/.m2/repository/mysql/mysql-connector-java/6.0.2/mysql-connector-java-6.0.2.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2016-04-19 23:02:09.478
+!MESSAGE /home/lucka/.m2/repository/mysql/mysql-connector-java/6.0.2/mysql-connector-java-6.0.2.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2016-04-19 23:02:09.478
+!MESSAGE /home/lucka/.m2/repository/mysql/mysql-connector-java/6.0.2/mysql-connector-java-6.0.2.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2016-04-19 23:02:09.479
+!MESSAGE /home/lucka/.m2/repository/mysql/mysql-connector-java/6.0.2/mysql-connector-java-6.0.2.jar is not on its project's build path
