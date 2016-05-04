@@ -1,0 +1,34 @@
+<!DOCTYPE html> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+> 
+	<h:head></h:head> 
+	<body> 
+		<h:form id="frmRegistroUsuarios">
+			<h:outputLabel id="lblNombre" for="txtNombre" value="Nombre" />
+			<h:inputText id="txtNombre" />
+			
+			<h:outputLabel id="lblCorreoElectronico" for="txtCorreoElectronico" value="Correo electrónico" />
+			<h:inputText id="txtCorreoElectronico" />
+			
+			<h:outputLabel id="lblNomUsuario" for="txtNomUsuario" value="Nombre de usuario" />
+			<h:inputText id="txtNomUsuario" />
+			
+			<h:outputLabel id="lblPreguntaSeguridad" for="idPreguntaSeguridad" value="Pregunta de seguridad" />
+			<h:selectOneMenu id="idPreguntaSeguridad">
+				<f:selectItem itemLabel="Seleccione una pregunta" itemValue="0" noSelectionOption="true" />
+			</h:selectOneMenu>
+			
+			<h:outputLabel id="lblRespuesta" for="txtRespuesta" value="Respuesta" />
+			<h:inputText id="txtRespuesta" />
+			
+			<h:commandButton 
+				id="btnIniciarSesion"
+				value="Iniciar sesión"
+				action="#{login.iniciarSesion()}"
+			/>
+		</h:form>
+	</body> 
+</html>

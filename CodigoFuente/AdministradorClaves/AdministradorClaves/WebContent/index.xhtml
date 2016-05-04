@@ -4,8 +4,22 @@
       xmlns:f="http://java.sun.com/jsf/core"
       xmlns:ui="http://java.sun.com/jsf/facelets"> 
 
-<h:head></h:head> 
+<h:head>
+	<link rel="stylesheet" href="#{request.contextPath}/css/estilos.css" type="text/css" />
+</h:head> 
 <body> 
-	#{login.saludo}
+	<h:form id="frmLogin">
+		<h:outputLabel id="lblNomUsuario" value="Nombre de usuario" for="txtNomUsuario" />
+		<h:inputText id="txtNomUsuario" value="#{login.nomUsuario}" />
+		
+		<h:outputLabel id="lblClave" for="txtClave" value="Clave" />
+		<h:inputSecret id="txtClave" value="#{login.clave}" />
+		
+		<h:commandButton 
+			id="btnIniciarSesion"
+			value="Iniciar sesión"
+			action="#{login.iniciarSesion()}"
+		/>
+	</h:form>
 </body> 
 </html>
