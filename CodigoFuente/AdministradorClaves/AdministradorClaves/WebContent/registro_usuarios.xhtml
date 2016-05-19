@@ -7,28 +7,50 @@
 	<h:head></h:head> 
 	<body> 
 		<h:form id="frmRegistroUsuarios">
-			<h:outputLabel id="lblNombre" for="txtNombre" value="Nombre" />
-			<h:inputText id="txtNombre" />
-			
-			<h:outputLabel id="lblCorreoElectronico" for="txtCorreoElectronico" value="Correo electrónico" />
-			<h:inputText id="txtCorreoElectronico" />
-			
-			<h:outputLabel id="lblNomUsuario" for="txtNomUsuario" value="Nombre de usuario" />
-			<h:inputText id="txtNomUsuario" />
-			
-			<h:outputLabel id="lblPreguntaSeguridad" for="idPreguntaSeguridad" value="Pregunta de seguridad" />
-			<h:selectOneMenu id="idPreguntaSeguridad">
-				<f:selectItem itemLabel="Seleccione una pregunta" itemValue="0" noSelectionOption="true" />
-			</h:selectOneMenu>
-			
-			<h:outputLabel id="lblRespuesta" for="txtRespuesta" value="Respuesta" />
-			<h:inputText id="txtRespuesta" />
-			
-			<h:commandButton 
-				id="btnIniciarSesion"
-				value="Iniciar sesión"
-				action="#{login.iniciarSesion()}"
-			/>
+			<h:panelGrid columns="2">
+				<h:outputLabel id="lblNombre" for="txtNombre" value="Nombre" />
+				<h:inputText 
+					id="txtNombre" 
+					required="true"
+					value="#{usuarioMb.usuario.nombre}" 
+				/>
+				
+				<h:outputLabel id="lblCorreoElectronico" for="txtCorreoElectronico" value="Correo electrónico" />
+				<h:inputText 
+					id="txtCorreoElectronico" 
+					value="#{usuarioMb.usuario.correoElectronico}"
+					required="true" 
+				/>
+				
+				<h:outputLabel id="lblNomUsuario" for="txtNomUsuario" value="Nombre de usuario" />
+				<h:inputText 
+					id="txtNomUsuario"
+					value="#{usuarioMb.usuario.nomUsuario}" 
+					required="true" 
+				/>
+				
+				<h:outputLabel id="lblPreguntaSeguridad" for="idPreguntaSeguridad" value="Pregunta de seguridad" />
+				<h:selectOneMenu 
+					id="idPreguntaSeguridad"
+					value="#{usuarioMb.usuario.preguntaSeguridad}" 
+					required="true"
+				>
+					<f:selectItem itemLabel="Seleccione una pregunta" itemValue="0" noSelectionOption="true" />
+				</h:selectOneMenu>
+				
+				<h:outputLabel id="lblRespuesta" for="txtRespuesta" value="Respuesta" />
+				<h:inputText 
+					id="txtRespuesta"
+					value="#{usuarioMb.usuario.respuestaPregunta}" 
+					required="true" 
+				/>
+				
+				<h:commandButton 
+					id="btnIniciarSesion"
+					value="Iniciar sesión"
+					action="#{usuarioMb.registrarUsuario()}"
+				/>
+			</h:panelGrid>
 		</h:form>
 	</body> 
 </html>
