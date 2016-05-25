@@ -6,6 +6,7 @@ package com.administradorclaves.controlador;
 import java.io.Serializable;
 
 import javax.faces.bean.ManagedBean;
+import javax.faces.bean.ManagedProperty;
 import javax.faces.bean.SessionScoped;
 
 /**
@@ -21,12 +22,26 @@ public class Login implements Serializable {
 	 */
 	private static final long serialVersionUID = 1L;
 	public static final String MANAGED_BEAN_NAME = "login";
-	private String saludo = "Bienvenido al administrador de claves";
+	
+	/**
+	 * Declaración de los atributos y asignación de datos desde la anotación 
+	 * @ManagedProperty.
+	 * 
+	 * Consideraciones: 
+	 * - No es valido utilizar la anotacíon si se están administrando los mamaged 
+	 * bean en el archivo faces-config.xml
+	 */
+	@ManagedProperty(value = "Bienvenido al administrador de claves")
+	private String saludo;
 	private String nomUsuario;
 	private String clave;
 	
 	public String iniciarSesion() {
 		return null;
+	}
+	
+	public void setSaludo(String saludo) {
+		this.saludo = saludo;
 	}
 	
 	public String getSaludo() {

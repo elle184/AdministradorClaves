@@ -3,24 +3,34 @@
  <depends-on-projects/>
  <used-by-projects/>
  <paths>
-  <path value="/home/lucka/.m2/repository/junit/junit/4.12/junit-4.12.jar"/>
-  <path value="/home/lucka/.m2/repository/com/sun/faces/jsf-impl/2.2.13/jsf-impl-2.2.13.jar">
+  <path value="C:/desarrollo/repositorio/mysql/mysql-connector-java/5.1.38/mysql-connector-java-5.1.38.jar"/>
+  <path value="/AdministradorClaves/WebContent/WEB-INF/faces-config.xml">
+   <libraries>
+    <library class="faces-config">
+     <id class="model-object"
+      path="FileSystems/WEB-INF/faces-config.xml" project="AdministradorClaves"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="C:/desarrollo/repositorio/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar"/>
+  <path value="C:/desarrollo/repositorio/junit/junit/4.12/junit-4.12.jar"/>
+  <path value="C:/desarrollo/repositorio/com/sun/faces/jsf-impl/2.2.13/jsf-impl-2.2.13.jar">
    <libraries>
     <library class="tld">
      <id class="model-object"
-      path="FileSystems/lib-jsf-impl-2.2.13.jar/META-INF/html_basic.tld" project="AdministradorClaves"/>
+      path="FileSystems/lib-jsf-impl-2.2.13.jar/meta-inf/html_basic.tld" project="AdministradorClaves"/>
     </library>
     <library class="tld">
      <id class="model-object"
-      path="FileSystems/lib-jsf-impl-2.2.13.jar/META-INF/jsf_core.tld" project="AdministradorClaves"/>
+      path="FileSystems/lib-jsf-impl-2.2.13.jar/meta-inf/jsf_core.tld" project="AdministradorClaves"/>
     </library>
     <library class="facelet">
      <id class="model-object"
-      path="FileSystems/lib-jsf-impl-2.2.13.jar/META-INF/mojarra_ext.taglib.xml" project="AdministradorClaves"/>
+      path="FileSystems/lib-jsf-impl-2.2.13.jar/meta-inf/mojarra_ext.taglib.xml" project="AdministradorClaves"/>
     </library>
     <library class="tld">
      <id class="model-object"
-      path="FileSystems/lib-jsf-impl-2.2.13.jar/META-INF/mojarra_ext.tld" project="AdministradorClaves"/>
+      path="FileSystems/lib-jsf-impl-2.2.13.jar/meta-inf/mojarra_ext.tld" project="AdministradorClaves"/>
     </library>
     <library class="facelet">
      <id class="model-object"
@@ -52,31 +62,72 @@
     </library>
    </libraries>
   </path>
-  <path value="/home/lucka/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar"/>
-  <path value="/home/lucka/.m2/repository/mysql/mysql-connector-java/5.1.38/mysql-connector-java-5.1.38.jar"/>
-  <path value="/home/lucka/.m2/repository/com/sun/faces/jsf-api/2.2.13/jsf-api-2.2.13.jar"/>
+  <path value="C:/desarrollo/repositorio/com/sun/faces/jsf-api/2.2.13/jsf-api-2.2.13.jar"/>
  </paths>
  <validation>
-  <core validator-id="jsf-verification"/>
+  <core validator-id="jsf-verification">
+   <linked-resource declaration="true" name="%1;%2;" path="%0"/>
+  </core>
   <core validator-id="jboss.jsf.core"/>
   <el>
-   <linked-el length="19" name="%0" offset="228" path="%1"/>
-   <linked-el length="19" name="%2" offset="228" path="%1"/>
+   <linked-el length="41" name="%3" offset="248" path="%4"/>
+   <linked-el length="39" name="%5" offset="1733" path="%6"/>
+   <linked-el length="22" name="%5" offset="349" path="%6"/>
+   <linked-el length="48" name="%5" offset="1229" path="%6"/>
+   <linked-el length="22" name="%5" offset="300" path="%6"/>
+   <linked-el length="47" name="%5" offset="764" path="%6"/>
+   <linked-el length="41" name="%5" offset="986" path="%6"/>
+   <linked-el length="48" name="%5" offset="1561" path="%6"/>
+   <linked-el length="36" name="%5" offset="552" path="%6"/>
+   <linked-el length="39" name="%7" offset="1733" path="%6"/>
+   <linked-el length="22" name="%7" offset="349" path="%6"/>
+   <linked-el length="48" name="%7" offset="1229" path="%6"/>
+   <linked-el length="22" name="%7" offset="300" path="%6"/>
+   <linked-el length="47" name="%7" offset="764" path="%6"/>
+   <linked-el length="41" name="%7" offset="986" path="%6"/>
+   <linked-el length="48" name="%7" offset="1561" path="%6"/>
+   <linked-el length="36" name="%7" offset="552" path="%6"/>
+   <linked-el length="41" name="%8" offset="248" path="%4"/>
+   <linked-el length="17" name="%9" offset="659" path="%4"/>
+   <linked-el length="22" name="%9" offset="528" path="%4"/>
+   <linked-el length="30" name="%9" offset="768" path="%4"/>
+   <linked-el length="18" name="%9" offset="377" path="%4"/>
+   <linked-el length="48" name="%10" offset="1229" path="%6"/>
+   <linked-el length="47" name="%10" offset="764" path="%6"/>
+   <linked-el length="41" name="%10" offset="986" path="%6"/>
+   <linked-el length="48" name="%10" offset="1561" path="%6"/>
+   <linked-el length="36" name="%10" offset="552" path="%6"/>
+   <linked-el length="17" name="%11" offset="659" path="%4"/>
+   <linked-el length="22" name="%11" offset="528" path="%4"/>
+   <linked-el length="30" name="%11" offset="768" path="%4"/>
+   <linked-el length="18" name="%11" offset="377" path="%4"/>
   </el>
  </validation>
  <aliases>
-  <alias path="/AdministradorClaves/WebContent/index.xhtml" value="%1"/>
-  <alias path="login" value="%0"/>
+  <alias path="/AdministradorClaves/WebContent/index.xhtml" value="%4"/>
+  <alias path="request" value="%3"/>
+  <alias path="/AdministradorClaves/WebContent/registro_usuarios.xhtml" value="%6"/>
   <alias
-   path="/AdministradorClaves/src/com/administradorclaves/controlador/Login.java" value="%2"/>
+   path="/AdministradorClaves/src/com/administradorclaves/controlador/UsuarioMb.java" value="%5"/>
+  <alias path="usuarioMb" value="%7"/>
+  <alias path="request.contextPath" value="%8"/>
+  <alias
+   path="/AdministradorClaves/src/com/administradorclaves/controlador/Login.java" value="%9"/>
+  <alias
+   path="/AdministradorClaves/src/com/administradorclaves/dummy/entidad/Usuario.java" value="%10"/>
+  <alias path="/AdministradorClaves/WebContent/WEB-INF/faces-config.xml" value="%0"/>
+  <alias
+   path="\AdministradorClaves\src\com\administradorclaves\controlador\UsuarioMb.java" value="%1"/>
+  <alias path="login" value="%11"/>
+  <alias path="com.administradorclaves.controlador.UsuarioMb" value="%2"/>
  </aliases>
  <includes/>
  <uris>
-  <uri value="http://java.sun.com/jsf/html">
-   <prefix>h</prefix>
-  </uri>
   <uri value="http://java.sun.com/jsf/core">
    <prefix>f</prefix>
+  </uri>
+  <uri value="http://java.sun.com/jsf/html">
+   <prefix>h</prefix>
   </uri>
  </uris>
 </kb-project>

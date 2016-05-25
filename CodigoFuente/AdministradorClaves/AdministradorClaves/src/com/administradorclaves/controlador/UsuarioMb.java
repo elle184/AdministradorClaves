@@ -4,8 +4,7 @@
 package com.administradorclaves.controlador;
 
 import javax.annotation.PostConstruct;
-import javax.faces.bean.ManagedBean;
-import javax.faces.bean.ViewScoped;
+import javax.faces.bean.ManagedProperty;
 
 import com.administradorclaves.dummy.entidad.Usuario;
 
@@ -13,10 +12,12 @@ import com.administradorclaves.dummy.entidad.Usuario;
  * @author lucka
  *
  */
-@ManagedBean
-@ViewScoped
 public class UsuarioMb {
 	private Usuario usuario;
+	private String saludo;
+	
+	@ManagedProperty(value = "Escriba su nombre completo")
+	private String nombre;
 	
 	public UsuarioMb() {}
 
@@ -35,5 +36,21 @@ public class UsuarioMb {
 
 	public void setUsuario(Usuario usuario) {
 		this.usuario = usuario;
+	}
+
+	public String getSaludo() {
+		return saludo;
+	}
+
+	public void setSaludo(String saludo) {
+		this.saludo = saludo;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
 	}
 }

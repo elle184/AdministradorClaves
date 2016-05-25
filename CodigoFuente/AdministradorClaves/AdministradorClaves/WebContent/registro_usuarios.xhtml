@@ -7,6 +7,9 @@
 	<h:head></h:head> 
 	<body> 
 		<h:form id="frmRegistroUsuarios">
+			<h:outputText value="#{usuarioMb.saludo}" />
+			<h:outputText value="#{usuarioMb.nombre}" />
+		
 			<h:panelGrid columns="2">
 				<h:outputLabel id="lblNombre" for="txtNombre" value="Nombre" />
 				<h:inputText 

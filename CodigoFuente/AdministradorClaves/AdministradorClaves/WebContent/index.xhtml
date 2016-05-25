@@ -9,6 +9,8 @@
 </h:head> 
 <body> 
 	<h:form id="frmLogin">
+		<h:outputText value="#{login.saludo}" />
+	
 		<h:outputLabel id="lblNomUsuario" value="Nombre de usuario" for="txtNomUsuario" />
 		<h:inputText id="txtNomUsuario" value="#{login.nomUsuario}" />
 		
