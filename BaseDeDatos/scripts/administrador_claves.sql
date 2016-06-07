@@ -29,3 +29,9 @@ create table if not exists usuarios(
   fecha_registro TIMESTAMP default CURRENT_TIMESTAMP,
   fecha_actualizacion DATETIME DEFAULT NULL
 );
+
+create table if not exists cuentas(
+	id_usuario bigint not null primary key,
+	nom_cuenta varchar(100) not null,
+	tipo_aplicacion enum('RED_SOCIAL', 'CORREO_ELECTRONICO', 'MENSAJERIA_INSTANTANEA', 'DISCOS_VIRTUALES')
+);

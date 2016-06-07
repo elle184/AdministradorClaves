@@ -14,17 +14,17 @@ and open the template in the editor.
     <persistence-unit name="AdministradorClavesPU">
         <class>com.administradorclaves.persistencia.entidad.Usuario</class>
         
-        <!--properties>
-            <property name="javax.persistsence.jdbc.Driver" value="com.mysql.jdbc.Driver" />
-            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost/administrador_claves" />
-            <property name="javax.persistence.jdbc.user" value="root" />
-            <property name="javax.persistence.jdbc.password" value="2008152193" />
-        </properties-->
         <properties>
+            <property name="javax.persistsence.jdbc.Driver" value="com.mysql.jdbc.Driver" />
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3307/administrador_claves" />
+            <property name="javax.persistence.jdbc.user" value="root" />
+            <property name="javax.persistence.jdbc.password" value="Redesis2015" />
+        </properties>
+        <!--properties>
             <property name="javax.persistsence.jdbc.Driver" value="org.postgresql.Driver" />
             <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/administrador_claves" />
             <property name="javax.persistence.jdbc.user" value="postgres" />
             <property name="javax.persistence.jdbc.password" value="2008152193" />
-        </properties>        
+        </properties-->
     </persistence-unit>
 </persistence>

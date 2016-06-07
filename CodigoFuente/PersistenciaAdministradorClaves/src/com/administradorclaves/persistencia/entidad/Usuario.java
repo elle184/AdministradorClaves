@@ -7,9 +7,12 @@ package com.administradorclaves.persistencia.entidad;
 
 import java.io.Serializable;
 import java.util.Date;
+import javax.persistence.Access;
+import javax.persistence.AccessType;
 import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -24,6 +27,7 @@ import javax.persistence.TemporalType;
  */
 @Entity
 @Table(name = "usuarios")
+@Access(AccessType.FIELD)
 public class Usuario implements Serializable {
     @Id
     @TableGenerator(
@@ -49,7 +53,7 @@ public class Usuario implements Serializable {
     
     @Column(name = "fecha_actualizacion")
     @Temporal(TemporalType.TIMESTAMP)
-    @Basic(optional = true)
+    @Basic(optional = true, fetch = FetchType.LAZY)
     private Date fechaActualizacion;
 
     public Usuario() {

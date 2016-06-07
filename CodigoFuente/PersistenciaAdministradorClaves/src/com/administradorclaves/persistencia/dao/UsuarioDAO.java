@@ -40,4 +40,16 @@ public class UsuarioDAO {
         entityManager.close();
         entityManagerFactory.close();
     }
+    
+    public Usuario getUsuarioPorIdUsuario(Long idUsuario) {
+        EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("AdministradorClavesPU");
+        EntityManager entityManager = entityManagerFactory.createEntityManager();        
+        
+        //Usuario usuario = entityManager.find(Usuario.class, idUsuario);
+        
+        entityManager.close();
+        entityManagerFactory.close();
+        
+        return usuario;
+    }
 }
